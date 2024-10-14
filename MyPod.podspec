@@ -9,7 +9,6 @@ Pod::Spec.new do |s|
   s.source       = { :git => 'https://github.com/yuxin5836/MyPod.git' }
   s.ios.deployment_target = '10.0'
 
-  s.vendored_frameworks = 'libcurl-HTTP1.xcframework'
 
   s.resource_bundles = {
     'MyPodResources' => ['cacert.pem']
