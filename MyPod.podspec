@@ -11,6 +11,6 @@ Pod::Spec.new do |s|
 
 
   s.resource_bundles = {
-    'MyPodResources' => ['cacert.pem']
+    'EMCAResource' => ['cacert.pem']
   }
 end
