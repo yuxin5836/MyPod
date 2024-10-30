@@ -7,10 +7,11 @@ Pod::Spec.new do |s|
   s.license      = { :type => 'MIT', :file => 'LICENSE' }
   s.author       = { 'Your Name' => 'you@example.com' }
   s.source       = { :git => 'https://github.com/yuxin5836/MyPod.git' }
-  s.ios.deployment_target = '10.0'
+  s.ios.deployment_target = '12.0'
 
 
   s.resource_bundles = {
-    'EMCAResource' => ['cacert.pem']
+    'EMASCAResource' => ['cacert.pem']
   }
+  s.xcconfig = { 'OTHER_LDFLAGS' => '$(inherited) -lc++ -lz' }
 end
